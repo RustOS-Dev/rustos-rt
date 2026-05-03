@@ -15,10 +15,8 @@
 #![no_std]
 #![no_main]
 
-use rustos_rt::sys_exit;
-
 #[no_mangle]
 fn main() -> i64 {
     rustos_rt::println!("Hello from RustOS userspace!");
-    sys_exit(0);
+    0
 }

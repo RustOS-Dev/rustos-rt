@@ -410,7 +410,8 @@ pub struct WifiConnectArgs {
     pub ssid_len: u8,
     /// SSID bytes (up to 32 bytes, remainder zero-padded).
     pub ssid: [u8; 32],
-    /// Security protocol — use the [`security_proto`] constants.
+    /// Security protocol — use the constants in the [`security_proto`] module
+    /// (e.g. [`security_proto::WPA2`]).
     pub security: u8,
     /// Passphrase / key length in bytes.
     pub pass_len: u8,
